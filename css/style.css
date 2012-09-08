@@ -1,55 +1,371 @@
 /* CSS Document */
-body{background:url(../images/white_carbonfiber.png);}
 
-header, footer{background:url(../images/assault.png);
-height:100px;}
+body{margin: 20px 0px 0px 0px;
+			padding: 0px;
+			background:black;}
+			
+#wrapper{margin: auto;
+			padding: 0px;
+			background:url(../images/graphics.jpg) no-repeat top center;
+			height: 600px;
+			width: 960px;
+			overflow:hidden;}
+					
+#backWrap{margin: 0px;
+			padding: 0px;
+			height:365px;
+			width:700px;
+			float: left;
+				}
+				
+#loginWrap{
+	background:#CCC;
+	margin:100px auto 0px auto;
+	padding: 0px 10px 5px 10px;
+	width:205px;}
+			
+.inputBox{
+	width:200px;}
+			
+#item{margin: 20px 0px 0px 20px;
+			padding: 0px 0px 0px 0px;
+			height:295px;
+			width:330px;
+			float: left;
+			
+			}
 
-#headerWrap{
-	margin:0px auto;
-	width:1000px;
-	}
-	
-#content{
-	margin:20px auto;
- -moz-box-shadow:0px 0px 3px #aaa;
-    -webkit-box-shadow:0px 0px 3px #aaa;
-    box-shadow:0px 0px 3px #aaa;
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    border-radius:10px;
-    border:2px solid #fff;
-    background-color:#f9f9f9;
-    width:950px;
-    overflow:hidden;
-	}
-#content legend{
-font-family: 'FamiliarProBold';
-text-align:left;
-    background-color:#f0f0f0;
-    color:#666;
-    font-size:24px;
-    text-shadow:1px 1px 1px #fff;
-    font-weight:bold;
-    float:left;
-    width:950px;
-    padding:5px 0px 5px 10px;
-    margin:10px 0px;
-    border-bottom:1px solid #fff;
-    border-top:1px solid #d9d9d9;}
-	
-#rowOne h3{
-	color:#2b2b2b;
-	font-family: 'FamiliarProBold';
-	font-weight:normal;
-	font-size:50px;
-	margin:0px;
-	border-bottom:#2b2b2b solid 5px;
-	}
-#rowOne img{float:left;}
+#char{margin: 20px 20px 0px 0px;
+			padding: 0px;
+			height:295px;
+			width:330px;
+			float: right;
+		
+			}
+			
+#hpbar{margin: 8px 18px 8px 23px;;
+			padding: 2px 2px 2px 2px;
+			height:25px;
+			width:355px;
+			float: left;
+			background: black;
+			color: white;
+			overflow: hidden;
+			text-align: center;
+			-webkit-box-shadow: 2px 2px 5px #000;			}
 
-#rowOne{overflow:hidden;
-width:930px;}
+#hpbar p{	margin:0px;
+			padding: 3px 0px 0px 140px;
+			position:fixed;
+			z-index: 1;
+			
 
-#content p{font-family: 'FamiliarProBold';
-font-size:14px;
 }
+
+#hpbarwrapper{margin: 0px 0px 0px 0px; 
+			padding: 0px 0px 0px 0px;
+			height: 25px;
+			z-index: 2;
+ 			background: red;
+			opacity: .5;}
+			
+#hpwrapper{margin: auto; 
+			padding: 0px;
+			text-align:center;
+			width: 150px;
+ 			}
+
+#hppotion{margin: 0px 0px 10px 0px;;
+			padding: 8px 0px 0px 0px;
+			height:40px;
+			width:150px;
+			float: left;
+				}
+
+#hppotionbtn{background: black;
+				color: white;
+				height: 25px;
+				width: 130px;
+				border: 1px white solid;}
+
+#chargold{margin: 0px 20px 10px 0px;
+			padding: 13px 25px 0px 0px;
+			height:27px;
+			width:105px;
+			float: left;
+			text-align:right;
+			color:#FFFF00;
+			}
+
+#actionWrap{margin: 0px;
+			padding: 0px;
+			width: 260px;
+			height: 365px;
+			float: right;
+			}
+			
+#actionBtn{margin: 102px 20px 15px 20px;
+			padding: 0px;
+			width: 220px;
+			height: 250px;
+ 			}
+			
+.stats3{margin: 0px 0px 7px 0px;
+		height: 25px;
+		width: 92px;
+		-webkit-box-shadow: 2px 2px 5px #000;
+		background: black;
+		color: white;
+		opacity: 1;
+		border: 1px #FFF solid;
+		-webkit-transition: background 0.5s;
+		cursor:pointer;}
+
+.stats3:hover{background: white;
+			color:black;
+			border: 1px #000 solid;
+			-webkit-box-shadow: 2px 2px 5px #000;}
+			
+.confirmstats{margin: 0px 10px 0px 20px;
+		height: 25px;
+		width: 92px;
+		-webkit-box-shadow: 2px 2px 5px #000;
+		background: black;
+		color: white;
+		opacity: 1;
+		border: 1px #FFF solid;
+		-webkit-transition: background 0.5s;
+		cursor:pointer;
+		text-align: center;
+		float: right;}
+
+.confirmstats:hover{background: white;
+			color:black;
+			border: 1px #000 solid;
+			-webkit-box-shadow: 2px 2px 5px #000;}
+#stats2{margin: 0px 40px 0px 0px;
+			padding: 20px 0px 0px 30px;
+			width: 190px;
+			height: 170px;
+			float: right;
+			}
+#playerBtn{
+	margin:8px 32px 0px 0px;
+float:right;
+width:190px;
+	}
+table{margin: 0px 0px 0px 10px;
+		text-align:right;}
+td{width: 102px;
+		text-align:left;}
+h1{text-align:center;}
+
+li{list-style:none;
+		font-size: 14px;}
+ul{margin:0px;
+padding:0px;}
+
+#textBox{margin: 20px 0px 0px 0px;
+	padding:0px 60px 0px 60px;
+			width: 580px;
+			height: 155px;
+			float: left;
+			overflow:auto;}
+			
+#directBtn{margin: auto; 
+			padding: 15px 0px 0px 0px;
+			text-align:center;
+			width: 660px;
+			height: 50px;
+ 			}
+
+/*#actionBtn .button{background: black;
+				margin: 0px 0px 5px 0px;
+				color: white;
+				height: 25px;
+				width: 220px;
+				border: 1px white solid; }*/
+				
+#actionBtn .button{margin: 0px 0px 10px 0px;
+			height: 25px;
+			width: 220px;
+			-webkit-box-shadow: 2px 2px 5px #000;
+			background: black;
+			color: white;
+			opacity: 1;
+			border: 1px #FFF solid;
+			-webkit-transition: display 1s;
+			-webkit-transition-delay: 2s;
+			-webkit-transition: 0.5s;
+			cursor:pointer;}
+			
+#actionBtn .button:hover{
+			background: white;
+			color:black;
+			border: 1px #000 solid;
+			-webkit-box-shadow: 2px 2px 5px #000;}
+
+
+#directBtn .button{border: 1px #000 solid;
+			margin: 1px 5px 10px 5px;
+			height: 25px;
+			-webkit-box-shadow: 2px 2px 5px #000;
+			background: black;
+			color: white;
+			opacity: 1;
+			border: 1px #FFF solid;
+			-webkit-transition: background 0.5s;
+			cursor:pointer;}
+			
+#directBtn .button:hover{
+			background: white;
+			color:black;
+			border: 1px #000 solid;
+			-webkit-box-shadow: 2px 2px 5px #000;}
+	
+	
+#backWrap .button {border: 1px #000 solid;
+			
+			height: 29px;
+			-webkit-box-shadow: 2px 2px 5px #000;
+			background: black;
+			color: white;
+			opacity: 1;
+			border: 1px #FFF solid;
+			-webkit-transition: background 0.5s;
+			cursor:pointer;}
+		
+#backWrap .button:hover{background: white;
+			color:black;
+			border: 1px #000 solid;
+			-webkit-box-shadow: 2px 2px 5px #000;}
+			
+/*#directBtn .button{background: black;
+				margin: 1px 5px 0px 5px;
+				color: white;
+				height: 25px;
+				
+				border: 1px white solid;}*/
+				
+#directBtn .actionBtn{display:inline !important;}
+
+#btnwrap{margin: 0px;
+			padding: 10px 20px 0px 20px;
+			width: 660px;
+			height: 40px;
+			float: left;}
+			
+.speech1{margin: 10px 0px 10px 0px;}
+		
+form{display:inline !important;}	
+
+.dwarf_char{background-image:url(../images/monsters/Dwarf.png)!important;
+background-repeat:no-repeat;}
+
+.gypsy_char{background-image:url(../images/monsters/Bandit.png)!important;
+background-repeat:no-repeat;}
+
+.rat_char{background-image:url(../images/monsters/Rat.png)!important;
+background-repeat:no-repeat;}
+
+.bandit_char{background-image:url(../images/monsters/Bandit.png)!important;
+background-repeat:no-repeat;}
+
+.sabertooth_char{background-image:url(../images/monsters/Sabertooth.png)!important;
+background-repeat:no-repeat;}
+
+.troll_char{background-image:url(../images/monsters/Troll.png)!important;
+background-repeat:no-repeat;}
+
+.backgroundcobblestone{background-image:
+						url(../images/outline.png),
+						url(../images/cobblestone.jpg);
+						background-repeat: no-repeat;
+						background-position: center center;}
+						
+.backgroundswamp{background-image:
+						url(../images/outline.png),
+						url(../images/swamp.jpg);
+						background-repeat: no-repeat;
+						background-position: center center;}
+						
+.backgrounddirt{background-image:
+						url(../images/outline.png),
+						url(../images/dirt.jpg);
+						background-repeat: no-repeat;
+						background-position: center center;}
+						
+.backgroundtavern{background-image:
+						url(../images/outline.png),
+						url(../images/tavern.jpg);
+						background-repeat: no-repeat;
+						background-position: center center;}
+
+.backgroundcity{background-image:
+						url(../images/outline.png),
+						url(../images/city.jpg);
+						background-repeat: no-repeat;
+						background-position: center center;}
+
+.backgroundalley{background-image:
+						url(../images/outline.png),
+						url(../images/alley.jpg);
+						background-repeat: no-repeat;
+						background-position: center center;}
+						
+.backgroundbs{background-image:
+						url(../images/outline.png),
+						url(../images/shop.jpg);
+						background-repeat: no-repeat;
+						background-position: center center;}
+						
+.backgroundmnt{background-image:
+						url(../images/outline.png),
+						url(../images/mountain.jpg);
+						background-repeat: no-repeat;
+						background-position: center center;}						
+
+.backgroundroom{background-image:
+						url(../images/outline.png),
+						url(../images/room.jpg);
+						background-repeat: no-repeat;
+						background-position: center center;}
+						
+.dwarf_char{background-image:url(../images/monsters/Dwarf.png)!important;
+background-repeat:no-repeat;}
+
+.gypsy_char{background-image:url(../images/monsters/Gypsy.png)!important;
+background-repeat:no-repeat;}
+
+.rat_char{background-image:url(../images/monsters/Rat.png)!important;
+background-repeat:no-repeat;}
+
+.bandit_char{background-image:url(../images/monsters/Bandit.png)!important;
+background-repeat:no-repeat;}
+
+.sabertooth_char{background-image:url(../images/monsters/Sabertooth.png)!important;
+background-repeat:no-repeat;}
+
+.troll_char{background-image:url(../images/monsters/Troll.png)!important;
+background-repeat:no-repeat;}
+
+.wolf_char{background-image:url(../images/monsters/Wolf.png)!important;
+background-repeat:no-repeat;}
+
+.orc_char{background-image:url(../images/monsters/Orc.png)!important;
+background-repeat:no-repeat;}
+
+.ogre_char{background-image:url(../images/monsters/Ogre.png)!important;
+background-repeat:no-repeat;}
+
+.mammoth_char{background-image:url(../images/monsters/Mammoth.png)!important;
+background-repeat:no-repeat;}
+
+.goblin_char{background-image:url(../images/monsters/Goblin.png)!important;
+background-repeat:no-repeat;}
+
+.spider_char{background-image:url(../images/monsters/Spider.png)!important;
+background-repeat:no-repeat;}
+
+.kitten_char{background-image:url(../images/monsters/Kitten.png)!important;
+background-repeat:no-repeat;}

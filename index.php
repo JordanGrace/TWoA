@@ -1,21 +1,18 @@
 <?php
 session_start();
-?>
+
+if(isset($_SESSION['userType'])){header('Location:game.php');}?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
-<title>JordanFinal</title>
+<title>The World of Aldoun</title>
 <link rel="stylesheet" type="text/css" href="css/styleLog.css">
 
 </head>
 
 <body>
-<?php
-if(isset($_SESSION['userType'])){
-	header('Location:game.html');}
-	else{
-?>
 	<div class="wrapper">
 			<div class="content">
 				<div id="form_wrapper" class="form_wrapper">
@@ -155,19 +152,7 @@ if(isset($_SESSION['userType'])){
 						height	: $currentForm.data('height') + 'px'
 					});
 				}
-				
-				/*
-				for the demo we disabled the submit buttons
-				if you submit the form, you need to check the 
-				which form was submited, and give the class active 
-				to the form you want to show
-				*/
 			});
         </script>
-
-<?php 
-}	
-
-?>
 </body>
 </html>

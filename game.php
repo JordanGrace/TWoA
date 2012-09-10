@@ -87,7 +87,7 @@ $dTalked = $row['dwarfTalked'];
 <html>
 <head>
 <meta charset="utf-8">
-<title>JordanFinal</title>
+<title>The World of Aldoun</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
 </head>

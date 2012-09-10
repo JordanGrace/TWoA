@@ -365,7 +365,7 @@ function Warrior(){
 	Char.skillstop = 6;
 	Char.hppotions = 1;
 	Char.crafted = "Sword";
-	console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag)
+	
 speech = "Con: Adds 20 Hp and 5 Armor<br />Str: Adds 10 Hp and 5 Attack<br />Dex: Adds 2 Armor and 5 Range Attack<br />Magic: Adds 10 Magic<br /><div class='speech1'>"+speech+"</div>";
 			storyBox.innerHTML = "<div class='jordanStack'>"+speech+"</div>";
 	statsdistribute();
@@ -382,7 +382,7 @@ function Warriorlvl(){
 	Char.statstop = 5;
 	Char.skillpoints = 3;
 	Char.skillstop = 3;
-	console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag)
+	
 	statsdistribute();
 }
 	//Archer	
@@ -407,7 +407,7 @@ function Archer(){
 	Char.skillstop = 6;
 	Char.hppotions = 1;
 	Char.crafted = "Bow";
-	console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag)
+	
 	speech = "Con: Adds 20 Hp and 5 Armor<br />Str: Adds 10 Hp and 5 Attack<br />Dex: Adds 2 Armor and 5 Range Attack<br />Magic: Adds 10 Magic<br /><div class='speech1'>"+speech+"</div>";
 			storyBox.innerHTML = "<div class='jordanStack'>"+speech+"</div>";
 	statsdistribute();
@@ -424,7 +424,7 @@ function Archerlvl(){
 	Char.statstop = 5;
 	Char.skillpoints = 3;
 	Char.skillstop = 3;
-	console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag)
+	
 	statsdistribute();
 }
 	//Mage		
@@ -449,7 +449,7 @@ function Mage(){
 	Char.skillstop = 6;
 	Char.hppotions = 1;
 	Char.crafted = "Staff";
-	console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag)
+	
 	speech = "Con: Adds 20 Hp and 5 Armor<br />Str: Adds 10 Hp and 5 Attack<br />Dex: Adds 2 Armor and 5 Range Attack<br />Magic: Adds 10 Magic<br /><div class='speech1'>"+speech+"</div>";
 			storyBox.innerHTML = "<div class='jordanStack'>"+speech+"</div>";
 	statsdistribute();
@@ -466,7 +466,7 @@ function Magelvl(){
 	Char.statstop = 5;
 	Char.skillpoints = 3;
 	Char.skillstop = 3;
-	console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag)
+	
 	statsdistribute();
 }
 
@@ -503,7 +503,7 @@ function pluscon(){
 			Char.hp = 20 + Char.hp;
 			Char.armor = 5 + Char.armor;
 			Char.con ++;
-			console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag);
+			
 			statsdistribute();
 }
 	
@@ -514,7 +514,7 @@ function subcon(){
 				Char.hp = Char.hp - 20;
 				Char.armor = Char.armor - 5;
 				Char.con --;
-				console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag);
+				
 				statsdistribute();}else{statsdistribute()}}
 			else{statsdistribute()}
 }
@@ -524,7 +524,7 @@ function plusstr(){
 			Char.hp = 10 + Char.hp;
 			Char.attack = 5 + Char.attack;
 			Char.str ++;
-			console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag);
+			
 			statsdistribute();
 }
 	
@@ -535,7 +535,7 @@ function substr(){
 					Char.hp = Char.hp - 10;
 					Char.attack = Char.attack - 5;
 					Char.str --;
-					console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag);
+					
 					statsdistribute();}else{statsdistribute()}}
 			else{statsdistribute()}
 }
@@ -545,7 +545,7 @@ function plusdex(){
 			Char.armor = 2 + Char.armor;
 			Char.rangeattack = 5 + Char.rangeattack;
 			Char.dex ++;
-			console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag);
+			
 			statsdistribute();
 }
 	
@@ -556,7 +556,7 @@ function subdex(){
 					Char.armor = Char.armor - 2;
 					Char.rangeattack = Char.rangeattack - 5;
 					Char.dex --;
-					console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag);
+					
 					statsdistribute();}else{statsdistribute()}}
 			else{statsdistribute()}
 }
@@ -565,7 +565,7 @@ function plusmagic(){
 			Char.statpoints --;
 			Char.mag = 10 + Char.mag;
 			Char.magic ++;
-			console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag);
+			
 			statsdistribute();
 }
 	
@@ -575,7 +575,7 @@ function submagic(){
 					Char.statpoints ++;
 					Char.mag = Char.mag - 10;
 					Char.magic --;
-					console.log (Char.hp, Char.armor, Char.attack, Char.rangeattack, Char.mag);
+					
 					statsdistribute();}else{statsdistribute()}}
 			else{statsdistribute()}
 }
@@ -684,7 +684,6 @@ function storyStart(){
 	aBtn.innerHTML = "<span class='actionBtns'><form><input id='roomSearch' type='button' value='Search Room' class='button' /></form></span>";
 	document.getElementById("godownstairs").onclick = goDownStairs;
 	document.getElementById("roomSearch").onclick = roomSearch;
-	console.log(Char.type,Char.lvl,Char.hp,Char.armor,Char.attack,Char.rangeattack,Char.mag,Char.sneak,Char.sneaksave,Char.lp,Char.lpsave,Char.crit,Char.critsave,Char.luck,Char.lucksave,Char.statpoints,Char.statstop,Char.con,Char.str,Char.dex,Char.magic,Char.gold,Char.goldgain,Char.hppotions,Char.lockpicks,Char.dmg,Char.dmghp,Char.critchance,Char.dmgpercent,Char.gotacrit,Char.key,Char.rope,Char.hpbar,Char.hptest,Char.xp,Char.room,Char.sneaktest,Char.crafted);
 	}
 	
 function roomSearch(){
@@ -901,7 +900,6 @@ function attackingTheRat(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - streetRat.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
 	streetRat.hp = streetRat.hp - Char.dmg;
 		if(streetRat.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the Street Rat." + "He still has " + streetRat.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -919,8 +917,6 @@ document.getElementById("tryAgain").onclick = tryAgain;document.getElementById("
 				else{speech = "The Street Rat did " + streetRat.dmg + " to you.<br /><div class='speech1'>"+speech+"</div>";
 	storyBox.innerHTML = "<div class='jordanStack'>"+speech+"</div>"; hpBar(); attackStreet();}}
 		else{	streetratdead();}
-		console.log (Char.critchance,Char.gotacrit,Char.dmg,Char.dmghp,streetRat.hp,streetRat.dmg);
-	
 	}
 
 function streetratdead(){
@@ -1068,7 +1064,6 @@ function buyStaff2(){
 		speech = "You wield your new staff<br /><div class='speech1'>"+speech+"</div>";	
 		Buy.item11 = 0;
 		Char.gold = Char.gold - 75;
-		console.log = ('Bought a staff');
 		streetRat.income = streetRat.income + 75;
 		Char.mag = Char.mag + 20;
 		buyStreet();}
@@ -1161,7 +1156,7 @@ function battleGoblinP1(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - Monster1.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
+	
 	Monster1.hp = Monster1.hp - Char.dmg;
 		if(Monster1.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the " + Monster1.type +"." + "He still has " + Monster1.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -1296,7 +1291,7 @@ function battleWolfP1A(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - Monster1.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
+	
 	Monster1.hp = Monster1.hp - Char.dmg;
 		if(Monster1.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the " + Monster1.type +"." + "He still has " + Monster1.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -1461,7 +1456,7 @@ function battleMammoth1C(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - Monster1.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
+	
 	Monster1.hp = Monster1.hp - Char.dmg;
 		if(Monster1.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the " + Monster1.type +"." + "He still has " + Monster1.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -1640,7 +1635,6 @@ function battleRatP2(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - Monster1.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
 	Monster1.hp = Monster1.hp - Char.dmg;
 		if(Monster1.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the " + Monster1.type +"." + "He still has " + Monster1.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -1751,7 +1745,7 @@ function battleSpider2A(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - Monster1.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
+	
 	Monster1.hp = Monster1.hp - Char.dmg;
 		if(Monster1.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the " + Monster1.type +"." + "He still has " + Monster1.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -1908,7 +1902,7 @@ function battleTroll2B(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - Monster1.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
+	
 	Monster1.hp = Monster1.hp - Char.dmg;
 		if(Monster1.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the " + Monster1.type +"." + "He still has " + Monster1.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -1967,7 +1961,6 @@ function openChest2C(){
 	aBtn.innerHTML = "";
 	path2Copen = 0;
 	chestNum = Math.floor(Math.random()*9);
-	console.log(chestNum);
 	if(chestNum == 0||chestNum == 1){
 		Char.hppotions ++;
 		speech = "You found a health potion inside the chest<br /><div class='speech1'>"+speech+"</div>";
@@ -2076,7 +2069,7 @@ function battleSabertooth2C(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - Monster1.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
+	
 	Monster1.hp = Monster1.hp - Char.dmg;
 		if(Monster1.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the " + Monster1.type +"." + "He still has " + Monster1.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -2184,7 +2177,7 @@ function battleBandit2D(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - Monster1.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
+	
 	Monster1.hp = Monster1.hp - Char.dmg;
 		if(Monster1.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the " + Monster1.type +"." + "He still has " + Monster1.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -2295,7 +2288,7 @@ function battleBanditP3(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - Monster1.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
+	
 	Monster1.hp = Monster1.hp - Char.dmg;
 		if(Monster1.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the " + Monster1.type +"." + "He still has " + Monster1.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -2435,7 +2428,7 @@ function battleOrc3C(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - Monster1.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
+	
 	Monster1.hp = Monster1.hp - Char.dmg;
 		if(Monster1.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the " + Monster1.type +"." + "He still has " + Monster1.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -2570,7 +2563,7 @@ function battleWolf3D(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - Monster1.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
+	
 	Monster1.hp = Monster1.hp - Char.dmg;
 		if(Monster1.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the " + Monster1.type +"." + "He still has " + Monster1.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -2644,7 +2637,7 @@ function attackingTheMerch(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - forestMerch.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
+	
 	forestMerch.hp = forestMerch.hp - Char.dmg;
 		if(forestMerch.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the Forest Merchant." + "He still has " + forestMerch.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";
@@ -2662,7 +2655,6 @@ document.getElementById("tryAgain").onclick = tryAgain;document.getElementById("
 				else{speech = "The Forest Merchant did " + forestMerch.dmg + " to you.<br /><div class='speech1'>"+speech+"</div>";
 	storyBox.innerHTML = "<div class='jordanStack'>"+speech+"</div>"; hpBar(); attackMerch();}}
 		else{	forestMerchdead();}
-		console.log (Char.critchance,Char.gotacrit,Char.dmg,Char.dmghp,forestMerch.hp,forestMerch.dmg);
 	
 	}
 
@@ -2893,9 +2885,7 @@ function drinkUp(){
 }
 
 function restartGame(){
-	console.log('restart');
 	Char.path = 'init';
-	console.log(Char.path);
 	Char.path;
 	}
 
@@ -2954,7 +2944,7 @@ function battleOgre(){
 	else if(Char.type == "Mage"){Char.dmg = parseFloat(((Math.floor(Math.random()*11) / 10) * Char.mag) * Char.gotacrit).toFixed(0);}
 	Char.dmg = Char.dmg - Monster1.armor;
 	if(Char.dmg <= 0){Char.dmg = 0;}else{}
-	console.log (Char.dmg);
+	
 	Monster1.hp = Monster1.hp - Char.dmg;
 		if(Monster1.hp >= 0){	
 				speech = "You did " + Char.dmg + " to the " + Monster1.type +"." + "He still has " + Monster1.hp +" health left.<br /><div class='speech1'>"+speech+"</div>";

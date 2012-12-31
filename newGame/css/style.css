@@ -1,0 +1,153 @@
+*{	
+	opacity: 0.9;
+}
+body{
+	margin:0px;
+}
+
+#wrapper{
+	width:960px;
+	height:600px;
+	background: url('../images/placeholder.png');
+	opacity: 1;
+	margin: auto;
+}
+
+
+#leftPanel{
+	float: left;
+	width: 615px;
+	height:600px;
+	margin:0px 27.5px;
+}
+#npcPanel{
+	width: 615px;
+	height: 306px;
+	background: #435;
+	margin: 18px 0px 0px 0px;
+}
+#chatPanel{
+	margin: 18px 0px 0px 0px;
+	width: 615px;
+	height: 218px;
+	background: #885;
+}
+
+#directionPanel{
+	width: 615px;
+	height: 40px;
+	background: #f85;	
+}
+#directionBtn{
+	width:465px;
+	margin: auto;
+}
+.dBtns{
+	float: left;
+	background: #ef5;
+	height: 40px;
+	width: 150px;
+	margin: 0px 2.5px;
+	cursor: pointer;
+}
+
+
+
+#rightPanel{
+	float: left;
+	width:260px;
+	height: 600px;
+	padding:0px 30px 0px 0px;
+}
+
+#userPanel{
+	width: 260px;
+	height: 294px;
+	background: #125;
+	margin:18px 0px;
+	padding: 12px 0px 0px 0px;
+}
+#tabs{
+	width: 240px;
+	height: 35px;
+	background: #3fe;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.tab{
+	width: 80px;
+	height: 35px;
+	float: left;
+	cursor: pointer;
+}
+#itemTab{
+	z-index: 0;
+	background: #143;
+}
+#items{
+	display: block;
+	background: #0FA;
+}
+#inventory{
+	width:200px;
+	margin: 0 auto;
+}
+.item{
+	margin: 5px;
+	width:40px;
+	height: 40px;
+	background: red;
+	float: left;
+}
+.testItem{
+	z-index: 50;
+	margin: 2px;
+	width:36px;
+	height: 36px;
+	background: green;
+}
+#statTab{
+	z-index: 0;
+	background: #f4e;
+}
+#stats{
+	display: none;
+	background: #FF94F5;
+}
+#optionTab{
+	z-index: 0;
+	background: #1f3;
+}
+#options{
+	display: none;
+	background: #8CFF9D;
+}
+.userBox{
+	width:260px;
+	height:259px;
+}
+#actionPanel{
+	width: 260px;
+	height: 260px;
+}
+#actionBtn{
+	width: 260px;
+	height: 217px;
+	background: #9f5;
+}
+#logout{
+	width: 260px;
+	height: 41px;
+	background: #5ef;
+}
+#logout input[type="button"]{
+	margin: 5px 0px 0px 14px;
+	width: 231px;
+	color: white;
+	background: #CE1B1B;
+	font-size: 15px;
+	font-weight: bold;
+}
+#logout input[type="button"]:hover{
+	cursor: pointer;
+}

@@ -1,0 +1,41 @@
+Things to Add:
+ ☐ Set Up Preloader for Images and Javascript (http://msdn.microsoft.com/en-us/magazine/gg681862.aspx)
+ ☐ Cheats (Ctrl + C)
+ ☐ Rest of the Prototype
+ ☐ Inventory
+ ☐ Drag and Drop Skills/Items
+ ☐ Level Up System
+ ☐ Onload Send Data to DB (Ip, Location, Refferal Address)
+ ☐ 
+
+Redesign:
+ ☐ BackGround Images
+ ☐ Image Sprites
+ ☐ Chris's UI 
+ Login Page:
+   ☐ Javascript Popup to show errors (http://ui-cloud.com/clean-newsletter-form/) 
+   ☐ 
+ ☐ 
+
+Javascript Rework:
+ ☐ Monsters
+ ☐ Skills
+ ☐ Items
+ ☐ Battles (http://www.rpglegion.com/ff6/ff6alg.txt)
+ ☐ Ajax Save
+ ☐ Shops
+ ☐ 
+
+PHP Rework:
+ ☐ fix up save and load states
+ ☐ login scripts to hash passwords
+ ☐ Send emails on updates and remember passwords
+ ☐ 
+
+FUTURE STUFF THAT WILL PROBABLY NEVER GET DONE:
+ ☐ Create Your own Adventure Mode
+ ☐ Side Chat
+ ☐ Random Map Creation
+ ☐ Random Monster Interaction
+ ☐ Attack Styles
+ ☐ 

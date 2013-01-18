@@ -3,7 +3,7 @@ Things to Add:
  ☐ Cheats (Ctrl + C)
  ☐ Rest of the Prototype
  ☐ Inventory
- ☐ Drag and Drop Skills/Items
+ ☐ Drag and Drop Skills/Items (http://www.html5rocks.com/en/tutorials/dnd/basics/)
  ☐ Level Up System
  ☐ Onload Send Data to DB (Ip, Location, Refferal Address)
  ☐ 
@@ -12,10 +12,13 @@ Redesign:
  ☐ BackGround Images
  ☐ Image Sprites
  ☐ Chris's UI 
+ ☐ 
+
  Login Page:
    ☐ Javascript Popup to show errors (http://ui-cloud.com/clean-newsletter-form/) 
+   ☐ ToS (http://www.bennadel.com/coldfusion/privacy-policy-generator.htm#primary-navigation)
+   ☐ Redesign Page
    ☐ 
- ☐ 
 
 Javascript Rework:
  ☐ Monsters

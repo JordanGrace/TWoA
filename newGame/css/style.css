@@ -98,6 +98,10 @@ body{
 	height: 40px;
 	background: red;
 	float: left;
+	cursor: move;
+}
+.item.over {
+  background: #564 !important;
 }
 .testItem{
 	z-index: 50;

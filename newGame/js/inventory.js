@@ -1,9 +1,16 @@
 var dragSrcEl = null;
 
-function handleDragStart(e) {
-  // Target (this) element is the source node.
-  this.style.opacity = '1';
+var cols = document.querySelectorAll('#inventory .item');
+[].forEach.call(cols, function(col) {
+  col.addEventListener('dragstart', handleDragStart, false);
+  col.addEventListener('dragenter', handleDragEnter, false)
+  col.addEventListener('dragover', handleDragOver, false);
+  col.addEventListener('dragleave', handleDragLeave, false);
+  col.addEventListener('drop', handleDrop, false);
+  col.addEventListener('dragend', handleDragEnd, false);
+});
 
+function handleDragStart(e) {
   dragSrcEl = this;
 
   e.dataTransfer.effectAllowed = 'move';
@@ -33,16 +40,6 @@ function handleDragEnter(e) {
 function handleDragLeave(e) {
   this.classList.remove('over');  // this / e.target is previous target element.
 }
-
-var cols = document.querySelectorAll('#inventory .item');
-[].forEach.call(cols, function(col) {
-  col.addEventListener('dragstart', handleDragStart, false);
-  col.addEventListener('dragenter', handleDragEnter, false)
-  col.addEventListener('dragover', handleDragOver, false);
-  col.addEventListener('dragleave', handleDragLeave, false);
-  col.addEventListener('drop', handleDrop, false);
-  col.addEventListener('dragend', handleDragEnd, false);
-});
 
 function handleDrop(e) {
   // this/e.target is current target element.

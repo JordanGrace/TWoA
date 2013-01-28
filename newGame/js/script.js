@@ -20,10 +20,14 @@ $(".tab").each(function(index){
 $(id).css("width", 100);
 }*/
 
-function test(percent){
+function test(){
+	var percent = prompt("percent of hp?");
 	if(percent > 100){
 		$("#hpBar").css("width", 100+"%");
 	}
 	else{$("#hpBar").css("width", percent+"%");}
 	
 }
+
+
+$('#button1').click(function(){test();});
